@@ -1,4 +1,11 @@
+install:
+  - npm install -g protractor
+
 script:
   - echo Hello world
   - echo Hello world 2
   - echo Hello world 3
+  - ./test_file
+  - webdriver-manager update
+  - webdriver-manager start
+  - protractor conf.js
